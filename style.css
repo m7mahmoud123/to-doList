@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+.container{
+    width:100%;
+    min-height:200vh;
+    background:linear-gradient(20deg,rgb(0, 0, 255),rgb(0, 0, 209));
+    display:flex;
+    justify-content:center;
+    /* align-items:center; */
+    position:relative;
+    
+}
+
+.list{
+    min-width:50%;
+    background-color:white;
+    margin: 100px auto auto auto;
+    position:absolute;
+    border-radius:10px;
+    
+
+    
+    
+    
+}
+
+.list h1{
+
+    color:rgb(255, 0, 98);
+    padding-left:55px;
+    padding-top:30px;
+}
+
+.input{
+
+    padding:20px 50px;
+}
+
+.input input{
+
+    background-color:yellow;
+    border:none;
+    outline:none;
+    width:500px;
+    height:40px;
+    border-radius:10px 0px 0px 10px;
+    font-size:20px;
+    direction: rtl;
+    padding:5px;
+    color:rgb(255, 0, 128);
+}
+
+.input button{
+
+    width:50px;
+    height:40px;
+    border:none;
+    outline:none;
+    margin-left:-4px;
+    border-radius: 0px;
+    background-color: rgb(123, 255, 0);
+    font-size:20px;
+    color:rgb(17, 0, 255);
+    font-weight: bold;
+}
+
+ul{
+    list-style-type:none;
+    padding:30px;
+}
+
+ul li{
+
+    font-size:24px;
+    color:rgb(255, 0, 128);
+    font-weight:bold;
+    margin-left:55px;
+    position:relative;
+    margin-top:20px;
+    cursor:pointer;
+    
+}
+
+ul li::before{
+
+    content:"";
+    width:15px;
+    height:15px;
+    position:absolute;
+    background-color:transparent;
+    border:2px solid black;
+    border-radius:50%;
+    left :-25px;
+    top:5px;
+}
+
+ul .checked::before{
+    background-color:yellow;
+    border:2px solid gray;
+}
+
+ul .checked{
+    color:rgb(0, 0, 0);
+    text-decoration: line-through;
+}
+
+ul li button{
+
+    margin-left:100px;
+}
+
+span{
+
+    margin-left:100px;
+    color:white;
+    background-color:rgb(255, 94, 0);
+    border-radius:10px;
+    padding:5px;
+}
+
+
+@media(max-width:673px){
+    .input input{
+
+        width:300px;
+        font-size:18px;
+        
+       
+
+    }
+
+    .input{
+
+        padding:20px 10px;
+    }
+
+    ul li{
+
+        font-size:20px;
+        margin-left:10px;
+    }
+
+    .input button{
+
+        width:50px;
+        height:40px;
+    }
+
+    .list{
+
+        width:400px;
+    }
+
+    span {
+        margin-left:20px;
+    }
+
+}
+
+@media(max-width: 405px){
+
+    .list{
+
+        width:330px;
+    }
+
+    .input input{
+
+        width:250px;
+        height:35px;
+    }
+
+    .input button{
+
+        width:35px;
+        height:35px;
+        font-size:18px;
+    }
+
+    span{
+
+        margin-left:200px;
+    
+    }
+}
